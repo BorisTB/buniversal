@@ -1,7 +1,7 @@
 {
 	"name": "buniversal",
-	"description": "A typescript library",
-	"version": "0.1.0",
+	"description": "Universal runtime adapter for Bun. Run Bun APIs in Bun and Node.js environments seamlessly.",
+	"version": "0.0.0",
 	"type": "module",
 	"files": [
 		"dist"
@@ -48,6 +48,24 @@
 		"type": "git",
 		"url": "git+https://github.com/BorisTB/buniversal.git"
 	},
+	"keywords": [
+		"bun",
+		"node",
+		"runtime",
+		"adapter",
+		"universal",
+		"build",
+		"spawn",
+		"run",
+		"typescript",
+		"cross-platform"
+	],
+	"author": "BorisTB",
+	"license": "MIT",
+	"homepage": "https://github.com/BorisTB/buniversal#readme",
+	"bugs": {
+		"url": "https://github.com/BorisTB/buniversal/issues"
+	},
 	"peerDependencies": {
 		"typescript": ">=4.5.0"
 	},
@@ -59,9 +77,8 @@
 	"simple-git-hooks": {
 		"pre-commit": "bun run lint:fix && git add ."
 	},
-	"homepage": "https://github.com/BorisTB/buniversal#readme",
-	"bugs": {
-		"url": "https://github.com/BorisTB/buniversal/issues"
-	},
-	"license": "MIT"
+	"engines": {
+		"node": ">=18.0.0",
+		"bun": ">=1.0.0"
+	}
 }
